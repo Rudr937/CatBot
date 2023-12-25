@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CatBot</title>
 </head>
+<link rel="stylesheet" href="css/style.css">
 <body>
-    
+    <div id="mainHeading" align="center">
+        <h1>CatBot</h1>
+    </div>
+    <div id="main" align="center">
+        <button id="startStopBtn" onclick="startStop(this.id)">Start</button>
+    </div>
+    <div id="mainSettings" align="center">
+        <div id="voiceLang">
+            <label for="voiceLang">Voice Language:</label>
+            <select name="voiceLangMenu" id="voiceLangMenu">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
+        </div>
+        <div id="voiceVoice">
+            <label for="voiceVoiceMenu">Voice:</label>
+            <select name="voiceVoiceMenu" id="voiceVoiceMenu">
+                <!-- <option value="Default">Default</option> -->
+            </select>
+        </div>
+        <div id="voiceVol">
+            <label for="voiceVolSlider">Volume:</label>
+            <input type="range" id="voiceVolSlider" min="0" max="9">
+        </div>
+        <div id="voiceRate">
+            <label for="voiceRateSlider">Speed:</label>
+            <input type="range" id="voiceRateSlider" min="0" max="9">
+        </div>
+        <div id="voicePitch">
+            <label for="voicePitchSlider">Pitch:</label>
+            <input type="range" id="voicePitchSlider" min="0" max="2">
+        </div>
+        <button id="saveSettings" onclick="saveSettings(this.id, )">Save</button>
+    </div>
+    <footer id="footer" align="center">
+        Developed & Maintained By RudraAditya Singh.
+    </footer>
 </body>
+<script src="js/main.js"></script>
 </html>

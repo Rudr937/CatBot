@@ -1,0 +1,13 @@
+#mainHeading{
+
+}
+#mainHeading h1{
+    border: 2px solid black;
+}
+#footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 25px;
+    border: 2px solid black;
+}
